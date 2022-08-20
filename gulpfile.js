@@ -41,7 +41,7 @@ function jsMinifyToDist() {
     .pipe(dest('./dist/js/'))
 }
 function replaceImgsToDist() {
-  return src('./src/img/*/icons/*.svg')
+  return src('./src/img/**')
     .pipe(plumber())
     .pipe(dest('./dist/img/'))
 }
